@@ -14,8 +14,8 @@ public class CM {
 
     String name;
     String obj;
-    ArrayList<AlredySelected> alreadySelected=new ArrayList<AlredySelected>();
-    ArrayList<Pairs> pairs =new ArrayList<Pairs>();
+    ArrayList<AlredySelected> alreadySelected= new ArrayList<>();
+    ArrayList<Pairs> pairs = new ArrayList<>();
 
     public void makeElements(int i, ArrayList<Element> list) {
         int max = 1000;
@@ -76,7 +76,7 @@ public class CM {
 //        {
 //            System.out.println(alreadySelected.get(i).element.objectOrLink + "has a score of"+alreadySelected.get(i).som);
 //        }
-        for (int i = 0; (i < alreadySelected.size()) ||(i < k);i++)
+        for (int i = 0; (i < alreadySelected.size()) &&(i < k);i++)
         {
             System.out.println(alreadySelected.get(i).element.objectOrLink + " has a score of "+alreadySelected.get(i).som);
         }
